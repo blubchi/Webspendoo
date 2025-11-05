@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spendoo | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- === NAVBAR === -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <h1 class="logo">Spendoo</h1>
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">History</a>
+        <a href="#">Analyze</a>
+        <a href="#">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="navbar-right">
+      <div class="profile" id="profileBox">
+        <img id="profilePic" src="assets/img/user.png" alt="Profil" class="profile-img" />
+        <span id="userName" class="username">Loading...</span>
+
+        <!-- Dropdown Menu -->
+        <div class="profile-menu">
+          <a href="#">⚙️ Pengaturan</a>
+          <a href="#">📤 Export</a>
+          <a href="#">📊 Report</a>
+          <a href="#">💡 Credits</a>
+          <a id="logoutBtn" href="#">🚪 Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- === MAIN CONTENT === -->
+  <main class="main-content">
+    <div class="welcome">
+      <h1>Selamat Datang di Spendoo 💸</h1>
+      <p>Kelola keuanganmu dengan mudah dan cerdas.</p>
+    </div>
+  </main>
+
+  <!-- === JS === -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>

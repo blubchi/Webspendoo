@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spendoo | Log In</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="auth.js" defer></script>
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h1 class="logo-text">Spendoo</h1>
+
+      <div class="form">
+        <div class="input-group">
+          <input type="email" id="loginEmail" required />
+          <label for="loginEmail">E-Mail</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="loginPassword" required />
+          <label for="loginPassword">Password</label>
+        </div>
+
+        <button id="loginBtn" class="primary-btn">Log In</button>
+        <!-- Setelah tombol Log In -->
+        <a href="forgot.html" class="forgot-link">Forgot Password?</a>
+
+
+        <p class="divider">atau masuk dengan</p>
+
+        <div class="social-login">
+          <img id="googleBtn" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" title="Google"/>
+          <img id="facebookBtn" src="Assets/img/logoFacebook.png" alt="Facebook" title="Facebook"/>
+          <img id="githubBtn" src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub" title="GitHub"/>
+          <img id="appleBtn" src="Assets/img/logoApple.png" alt="Apple" title="Apple"/>
+        </div>
+
+        <div class="links">
+          <a href="signup.html">Sign Up</a>
+          <a href="#" id="guestBtn">Continue as Guest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

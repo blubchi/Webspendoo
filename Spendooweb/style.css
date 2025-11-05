@@ -1,0 +1,382 @@
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, #178237 0%, #1B1C28 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  border-radius: 24px;
+  padding: 50px 45px;
+  width: 400px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.logo-img {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 5px;
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+.input-group {
+  position: relative;
+  width: 94%;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* efek label naik */
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  left: 12px;
+  font-size: 0.8rem;
+  color: #2effa7;
+  background: #1B1C28;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* efek glow */
+.input-group input:focus {
+  border-color: #2effa7;
+  box-shadow: 0 0 10px rgba(46, 255, 167, 0.3);
+  outline: none;
+}
+
+.primary-btn {
+  width: 100%;
+  background: white;
+  color: #1B1C28;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.primary-btn:hover {
+  transform: scale(1.05);
+  background: #f1f1f1;
+}
+
+/* Social login icons */
+.divider {
+  margin: 25px 0 15px;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social-login img {
+  width: 42px;
+  height: 42px;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.social-login img:hover {
+  transform: scale(1.12);
+  background: #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.links {
+  margin-top: 25px;
+}
+.links a {
+  display: inline-block;
+  margin: 5px 12px;
+  text-decoration: none;
+  color: #2effa7;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #a3ffcf;
+  margin: -10px 0 15px;
+  line-height: 1.4;
+  text-align: left;
+}
+.hint strong {
+  color: #2effa7;
+  font-weight: 600;
+}
+
+.social-login img {
+  width: 42px;
+  height: 42px;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.social-login img:hover {
+  transform: scale(1.12);
+  background: #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 10px;
+  color: #2effa7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #a3ffcf;
+  margin-bottom: 10px;
+}
+
+.code-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 15px;
+}
+
+.code-box {
+  width: 45px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.code-box:focus {
+  outline: none;
+  border-color: #2effa7;
+  box-shadow: 0 0 10px rgba(46, 255, 167, 0.3);
+}
+
+/*============== BAGIAN MAIN ===============*/
+/* === GENERAL === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #178237, #1b1c28);
+  color: white;
+  min-height: 100vh;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* lebih ramping dari sebelumnya */
+  background-color: rgba(8, 18, 31, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px; /* kurangi padding agar lebih seimbang */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* kiri: logo + nav links */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  font-size: 1.7rem;
+  color: #34f58c;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #34f58c;
+}
+
+.nav-links .active {
+  color: #34f58c;
+}
+
+.nav-links .active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #34f58c;
+  border-radius: 2px;
+}
+
+/* kanan: profil */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+/* === PROFILE === */
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid #34f58c;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-right: 50px; /* biar gak mepet kanan */
+}
+
+.profile:hover {
+  background: rgba(52, 245, 140, 0.2);
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #34f58c;
+}
+
+.username {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* === DROPDOWN MENU === */
+.profile-menu {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: rgba(8, 18, 31, 0.95);
+  border: 1px solid #34f58c;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  min-width: 160px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.25s ease;
+}
+
+.profile-menu a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.profile-menu a:hover {
+  background: rgba(52, 245, 140, 0.25);
+}
+
+/* Saat hover tampil menu */
+.profile:hover .profile-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
