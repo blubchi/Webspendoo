@@ -419,7 +419,7 @@ body {
   padding: 24px;
 }
 
-/*============== DASHBOARD (HOME) ===============*/
+/* DASHBOARD (HOME) ===============*/
 .dashboard-container {
   display: flex;
   flex-direction: column;
@@ -576,7 +576,7 @@ body {
   }
 }
 
-/*============== HALAMAN ADD/EDIT TRANSACTION (UKURAN & PALET) ===============*/
+
 .tx-page-overlay {
   position: fixed;
   top: 0;
@@ -772,7 +772,7 @@ input[type=number] {
   background-color: var(--sp-gray);
 }
 
-/*============== MODALS (PALET DISESUAIKAN) ===============*/
+
 .hidden {
   display: none !important;
 }
